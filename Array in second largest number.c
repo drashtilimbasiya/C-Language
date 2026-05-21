@@ -22,6 +22,7 @@ int main()
         if(a[i] > largest)
         {
             secondLargest = largest;
+            
             largest = a[i];
         }
         else if(a[i] > secondLargest && a[i] != largest)
