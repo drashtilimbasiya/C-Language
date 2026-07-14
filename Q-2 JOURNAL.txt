@@ -1,0 +1,76 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a[2][2],b[2][2],add[2][2],sub[2][2],mul[2][2],i,j,k;
+	clrscr();
+	printf("enter first matrix:\n");
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			scanf("%d",&a[i][j]);
+		}
+	}
+	printf("enter second matrix:\n");
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			scanf("%d",&b[i][j]);
+		}
+	}
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			add[i][j]=a[i][j]+b[i][j];
+		}
+	}
+	printf("sum of matrix:\n");
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			printf("%d\t",add[i][j]);
+			if(j==1)
+			printf("\n");
+		}
+	}
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			sub[i][j]=a[i][j]-b[i][j];
+		}
+	}
+	printf("sub of matrix:\n");
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			printf("%d\t",sub[i][j]);
+			if(j==1)
+			printf("\n");
+		}
+	}
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			mul[i][j]=a[i][j]*b[i][j];
+		}
+	}
+	printf("sub of matrix:\n");
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			printf("%d\t",mul[i][j]);
+			if(j==1)
+			printf("\n");
+		}
+	}
+	getch();
+}
+ 
